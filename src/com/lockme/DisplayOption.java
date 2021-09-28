@@ -1,10 +1,17 @@
 package com.lockme;
 
+import java.util.Scanner;
+
 public class DisplayOption {
+	public static String name = null;
+	static Scanner scn = new Scanner(System.in);
      public static void printWelcome() {
-    	 System.out.println("           Welcome to LockMe.com. \n"
-    	 		          + "    This application is developed by Adarsh kumar \n"
-    	 		          + "*******************************************************");
+    	 
+		  System.out.println("Hello, What's your name?");
+    	  name = scn.nextLine();
+    	 System.out.println("           Welcome," + name +" to LockMe.com. \n"
+    	 		          + "    This application is developed by Adarsh Kumar"
+    	 		          + "\n*******************************************************");
      }
      public static void displayMenu() {
     	 String menu = "\n\nSelect any option number from below and press Enter \n\n"
